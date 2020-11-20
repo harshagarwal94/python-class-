@@ -1,0 +1,38 @@
+import mysql.connector 
+print("hii") 
+mydb = mysql.connector.connect( 
+  host="localhost", 
+  user="root", 
+  password="1234567890" 
+) 
+ 
+print(mydb) 
+
+ 
+
+#2 
+import mysql.connector 
+conn = mysql.connector.connect( 
+  host="localhost", 
+  user="root", 
+  password="1234567890" 
+) 
+cursor=conn.cursor() 
+cursor.execute("SELECT DATABASE()") 
+data = cursor.fetchone() 
+print("Connection established to:",data) 
+conn.close() 
+ 
+
+#3 
+import mysql.connector 
+conn = mysql.connector.connect(host="localhost",user="root",password="1234567890") 
+cursor=conn.cursor() 
+cursor.execute("DROP database IF EXISTS Mydatabase") 
+cursor.execute("create database Mydatabase") 
+print("List of databases:") 
+cursor.execute("Show databases") 
+print(cursor.fetchall()) 
+conn.close() 
+
+ 
