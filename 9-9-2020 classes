@@ -23,3 +23,25 @@ print(d.kind)
 print(e.kind) 
 print(d.name) 
 print(e.name) 
+
+
+
+
+
+
+#3
+class rectangle: 
+ 
+    def __init__(self,lenght,bredth): 
+        self.l=lenght 
+        self.b=bredth 
+    def area(self): 
+        area_rec=self.l*self.b 
+        print(area_rec) 
+class square(rectangle): 
+    pass 
+v=square(20,30) 
+x=rectangle(20,30) 
+x.area() 
+v.area() 
+ 
