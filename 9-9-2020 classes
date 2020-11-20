@@ -29,7 +29,7 @@ print(e.name)
 
 
 
-#3
+#3  ----14-9-2020
 class rectangle: 
  
     def __init__(self,lenght,bredth): 
@@ -44,4 +44,22 @@ v=square(20,30)
 x=rectangle(20,30) 
 x.area() 
 v.area() 
+ 
+ 
+ 
+ 
+ #4--------18-9-2020
+ class xyz: 
+    def You(self): 
+        pass 
+class abc(xyz): 
+    def You(self): 
+        print("This is Ghost") 
+class uvw(xyz): 
+    def You(self): 
+        print("You are just a crazy guy") 
+r=abc() 
+r.You() 
+w=uvw() 
+w.You() 
  
